@@ -1,0 +1,49 @@
+
+<!-- Northwind Food Items Display App -->
+
+    This application fetches food items data from the Northwind API and displays various information about the food items, including their names, costs, quantities, and categories. It also includes search and sort functionalities for a better user experience.
+
+  # Requirements
+
+       * Node.js
+       * npm or yarn for dependency management
+       
+  # Installation
+        Use the following command to install the dependencies:
+
+        # npm install
+                    
+  # Running the App
+      Use the following command to run the app locally for development in watch mode:
+
+       # npm start
+
+       The app will be accessible at http://localhost:8080/index.html.
+
+  # Debugging the App
+
+        You can directly debug the original TypeScript code in the browser, which is supplied via sourcemaps. If the browser doesn't automatically jump to the TypeScript code when setting breakpoints, use Ctrl+P in Chrome to open the *.ts file you want to debug.
+    
+   # Building the App
+
+        #Unoptimized Build
+        To build the project and get an app that can be deployed, run the following command:
+
+        # npm run build
+    
+    Then, start the generated package with
+       
+       #npm run start:dist
+
+  # Optimized Build
+
+      For an optimized self-contained build, run:
+
+      # npm run build:opt
+
+  # Then, start the generated package with:
+
+     # npm run start:dist
+
+
+    

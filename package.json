@@ -1,0 +1,35 @@
+{
+  "name": "sap.ui.demo",
+  "version": "1.0.0",
+  "description": "UI5 Application: demo",
+  "author": "vishnu biju",
+  "license": "Apache-2.0",
+  "keywords": [
+    "ui5",
+    "openui5",
+    "sapui5"
+  ],
+  "scripts": {
+    "build": "ui5 build --clean-dest",
+    "build:opt": "ui5 build self-contained --clean-dest --all",
+    "start": "ui5 serve --port 8080 -o index.html",
+    "start-cdn": "ui5 serve --port 8080 -o index-cdn.html",
+    "start:dist": "npm start -- --config ui5-dist.yaml",
+    "start:dist-cdn": "npm run start-cdn -- --config ui5-dist.yaml",
+    "ts-typecheck": "tsc --noEmit",
+    "lint": "eslint webapp",
+    "deploy": "npm run build && fiori deploy --config ui5-deploy.yaml && rimraf archive.zip"
+  },
+  "devDependencies": {
+    "@sap/ux-ui5-tooling": "^1.11.1",
+    "@openui5/types": "1.120.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "@ui5/cli": "^3.6.1",
+    "eslint": "^8.50.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2",
+    "ui5-middleware-livereload": "^3.0.1",
+    "ui5-tooling-transpile": "^3.2.5"
+  }
+}
